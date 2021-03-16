@@ -1,0 +1,5 @@
+{
+    "project_name": "project",
+    "project_name_upper": "{{ cookiecutter.project_name|upper }}",
+    "author": "author"
+}
