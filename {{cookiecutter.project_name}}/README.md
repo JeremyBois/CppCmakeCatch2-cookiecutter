@@ -103,7 +103,7 @@ In order to properly clean *Cmake* and *clangd* files the utility provided in `T
 ./Tools/Purger cmake
 
 # Clean both Cmake and Clangd files
-./Tools/Purger cmake clandg
+./Tools/Purger cmake clangd
 ```
 
 This is sometimes required to get a clean working directory and make sure everything works when building from scratch.
