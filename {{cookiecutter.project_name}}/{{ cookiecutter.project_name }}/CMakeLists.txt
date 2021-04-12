@@ -90,7 +90,7 @@ if (MSVC)
             /W4
             # /WX
     )
-    target_link_options(${MY_LIB_NAME}
+    target_link_options({{ "${" }}{{ cookiecutter.project_name_upper }}_LIB_NAME}
         PUBLIC
             -MACHINE:x64
     )
