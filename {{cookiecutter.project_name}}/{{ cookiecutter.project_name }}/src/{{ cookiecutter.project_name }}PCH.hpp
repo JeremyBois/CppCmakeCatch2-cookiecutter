@@ -1,5 +1,5 @@
-#ifndef __{{ cookiecutter.project_name_upper }}PCH__HPP
-#define __{{ cookiecutter.project_name_upper }}PCH__HPP
+#ifndef __{{ cookiecutter.project_name_upper }}_{{ cookiecutter.project_name_upper }}PCH__HPP
+#define __{{ cookiecutter.project_name_upper }}_{{ cookiecutter.project_name_upper }}PCH__HPP
 
 /*
     Used as a precompiled header to reduce compilation time.
