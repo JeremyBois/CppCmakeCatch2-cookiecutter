@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.2.0 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.3.0 FATAL_ERROR)
 PROJECT("{{ cookiecutter.project_name }}")
 
 
@@ -72,6 +72,11 @@ set_target_properties({{ "${" }}{{ cookiecutter.project_name_upper }}_LIB_NAME}
     CXX_STANDARD 17
     CXX_STANDARD_REQUIRED ON
     LINKER_LANGUAGE CXX
+
+    # https://gcc.gnu.org/wiki/Visibility
+    # https://github.com/elucideye/drishti/issues/225
+    CXX_VISIBILITY_PRESET hidden
+    VISIBILITY_INLINES_HIDDEN ON
 )
 
 # Read only alias
