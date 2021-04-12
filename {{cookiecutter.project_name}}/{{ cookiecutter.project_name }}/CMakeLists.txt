@@ -35,7 +35,8 @@ file(
     GLOB
     {{ cookiecutter.project_name }}_SOURCES
     ${PROJECT_SOURCE_DIR}/src/*
-    ${PROJECT_SOURCE_DIR}/src/Core/*
+    ${PROJECT_SOURCE_DIR}/src/{{ cookiecutter.project_name }}/*
+    ${PROJECT_SOURCE_DIR}/src/{{ cookiecutter.project_name }}/Core/*
 )
 add_library({{ "${" }}{{ cookiecutter.project_name_upper }}_LIB_NAME} ${LIB_TYPE} {{ "${" }}{{ cookiecutter.project_name }}_SOURCES})
 
