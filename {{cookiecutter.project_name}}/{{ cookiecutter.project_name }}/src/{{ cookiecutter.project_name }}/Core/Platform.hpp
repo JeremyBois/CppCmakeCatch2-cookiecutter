@@ -49,4 +49,26 @@
 #endif // {{cookiecutter.project_name_upper}}_SHARED
 
 
+// Compile time hash function that works also for template function
+// as opposed to __func__ that only extract function name
+#if defined _MSC_VER
+    #define FUNC_NAME __FUNCSIG__
+#elif defined __clang__ || (defined __GNUC__)
+    #define FUNC_NAME __PRETTY_FUNCTION__
+#endif
+
+
+// Allow to test current platform at compile time
+#define {{cookiecutter.project_name_upper}}_PLATFORM_WINDOWS  1
+#define {{cookiecutter.project_name_upper}}_PLATFORM_MAC      2
+#define {{cookiecutter.project_name_upper}}_PLATFORM_UNIX     3
+
+#if defined _WIN32 || (defined __CYGWIN__)
+    #define {{cookiecutter.project_name_upper}}_PLATFORM {{cookiecutter.project_name_upper}}_PLATFORM_WINDOWS
+#elif defined(__APPLE__)
+    #define {{cookiecutter.project_name_upper}}_PLATFORM {{cookiecutter.project_name_upper}}_PLATFORM_MAC
+#else
+    #define {{cookiecutter.project_name_upper}}_PLATFORM {{cookiecutter.project_name_upper}}_PLATFORM_UNIX
+#endif
+
 #endif
