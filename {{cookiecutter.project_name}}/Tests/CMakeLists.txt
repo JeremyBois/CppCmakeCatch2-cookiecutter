@@ -3,7 +3,7 @@ project("{{ cookiecutter.project_name }}-tests")
 
 
 # ------------------------------------------------------------------------------
-# Engine TESTS
+# {{ cookiecutter.project_name }} TESTS
 # ------------------------------------------------------------------------------
 add_subdirectory(${PROJECT_SOURCE_DIR}/vendors/Catch2)
 
