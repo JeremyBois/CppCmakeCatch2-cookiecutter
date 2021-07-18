@@ -14,7 +14,7 @@ cmake -G "Unix Makefiles" -B "./build" -S "."
 cmake -G "Unix Makefiles" -B "./build" -S "." -D {{ cookiecutter.project_name_upper }}_BUILD_TESTING=ON
 ```
 
-Default build target is `Release` but this can be change by explicitly setting the required build type using `-D CMAKE_BUILD_TYPE=Debug` or `-D CMAKE_BUILD_TYPE=Debug` when calling *Cmake*
+Default build target is `Release` but this can be change by explicitly setting the required build type using `-D CMAKE_BUILD_TYPE=Debug` or `-D CMAKE_BUILD_TYPE=Release` when calling *Cmake*
 ```bash
 # DEFAULT behavior
 # Lib + App as Release
