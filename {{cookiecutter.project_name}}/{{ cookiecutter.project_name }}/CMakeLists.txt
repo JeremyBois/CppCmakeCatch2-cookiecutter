@@ -93,7 +93,7 @@ if (MSVC)
     # warning level 4 and all warnings as errors
     target_compile_options({{ "${" }}{{ cookiecutter.project_name_upper }}_LIB_NAME}
         PRIVATE
-            /W4
+            /W4 /w14640 /permissive-
             # /WX
     )
     target_link_options({{ "${" }}{{ cookiecutter.project_name_upper }}_LIB_NAME}
@@ -105,6 +105,7 @@ else()
     target_compile_options({{ "${" }}{{ cookiecutter.project_name_upper }}_LIB_NAME}
         PRIVATE
             -Wall -Wextra -pedantic -Wwrite-strings
+            -Wshadow -Wnon-virtual-dtor -Woverloaded-virtual
             -Wno-parentheses -Warray-bounds -Weffc++ -Wstrict-aliasing
             # -Werror
         PUBLIC
