@@ -3,6 +3,7 @@
 
 
 #include "Platform.hpp"
+#include "Debug.hpp"
 
 
 #endif
