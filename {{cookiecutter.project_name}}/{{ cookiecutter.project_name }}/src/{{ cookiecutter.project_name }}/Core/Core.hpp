@@ -1,5 +1,5 @@
-#ifndef __{{ cookiecutter.project_name_upper }}_CORE__HPP
-#define __{{ cookiecutter.project_name_upper }}_CORE__HPP
+#ifndef {{ cookiecutter.project_name_upper }}_CORE__HPP
+#define {{ cookiecutter.project_name_upper }}_CORE__HPP
 
 
 #include "Platform.hpp"

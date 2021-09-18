@@ -1,5 +1,5 @@
-#ifndef __{{ cookiecutter.project_name_upper }}_PLATFORM__HPP
-#define __{{ cookiecutter.project_name_upper }}_PLATFORM__HPP
+#ifndef {{ cookiecutter.project_name_upper }}_PLATFORM__HPP
+#define {{ cookiecutter.project_name_upper }}_PLATFORM__HPP
 
 // More at
 // https://cmake.org/Wiki/BuildingWinDLL
